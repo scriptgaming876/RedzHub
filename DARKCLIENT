@@ -1,0 +1,107 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/cerberus.lua"))()
+
+local window = Library.new("DarkClient----Kampong horror") -- Args(<string> Name, <boolean?> ConstrainToScreen)
+
+window:LockScreenBoundaries(true) -- Args(<boolean> ConstrainToScreen)
+
+local tab = window:Tab("VISUAL") -- Args(<string> Name, <string?> TabImage)
+
+section = tab:Section("Visual Game") -- Args(<string> Name)
+
+local title = section:Title("ESP/VISUAL") -- Args(<string> Name)
+title:ChangeText("ESP GAME") -- Args(<String> NewText)
+
+local toggle = section:Toggle("ESP GHOST", function(bool)
+   print("Toggle is: "..tostring(bool))
+end) -- Args(<String> Name, <Function> Callback)
+toggle:Set(false) -- Args(<Boolean> ToggleState, <Function?> Callback)
+
+local toggle = section:Toggle("ESP instruction", function(bool)
+   print("Toggle is: "..tostring(bool))
+end) -- Args(<String> Name, <Function> Callback)
+toggle:Set(false) -- Args(<Boolean> ToggleState, <Function?> Callback)
+
+local toggle = section:Toggle("ESP ITEMS", function(bool)
+   print("Toggle is: "..tostring(bool))
+end) -- Args(<String> Name, <Function> Callback)
+toggle:Set(false) -- Args(<Boolean> ToggleState, <Function?> Callback)
+
+local dropdown = section:Dropdown("ESP BOX") -- Args(<String> Name)
+dropdown:ChangeText("BOX") -- Args(<String> NewText)
+dropdown:Toggle("3D BOX") -- Dropdowns and searchbars can go inside dropdowns
+
+local tab = window:Tab("Player") -- Args(<string> Name, <string?> TabImage)
+
+local section = tab:Section("Player") -- Args(<string> Name)
+
+local title = section:Title("Local Player") -- Args(<string> Name)
+title:ChangeText("Title") -- Args(<String> NewText)
+
+local toggle = section:Toggle("God mode", function(bool)
+   print("Toggle is: "..tostring(bool))
+end) -- Args(<String> Name, <Function> Callback)
+toggle:Set(false) -- Args(<Boolean> ToggleState, <Function?> Callback)
+
+local toggle = section:Toggle("NOCLIP Bypasser", function(bool)
+   print("Toggle is: "..tostring(bool))
+end) -- Args(<String> Name, <Function> Callback)
+toggle:Set(false) -- Args(<Boolean> ToggleState, <Function?> Callback)
+
+local toggle = section:Toggle("Fullbright", function(bool)
+   print("Toggle is: "..tostring(bool))
+end) -- Args(<String> Name, <Function> Callback)
+toggle:Set(false) -- Args(<Boolean> ToggleState, <Function?> Callback)
+
+local toggle = section:Toggle("Auto Win", function(bool)
+   print("Toggle is: "..tostring(bool))
+end) -- Args(<String> Name, <Function> Callback)
+toggle:Set(false) -- Args(<Boolean> ToggleState, <Function?> Callback)
+
+local tab = window:Tab("Chapter 2") -- Args(<string> Name, <string?> TabImage)
+
+local section = tab:Section("Chapter 2") -- Args(<string> Name)
+
+local title = section:Title("ESP") -- Args(<string> Name)
+title:ChangeText("Title") -- Args(<String> NewText)
+
+local toggle = section:Toggle("ESP darling", function(bool)
+   print("Toggle is: "..tostring(bool))
+end) -- Args(<String> Name, <Function> Callback)
+toggle:Set(false) -- Args(<Boolean> ToggleState, <Function?> Callback)
+
+local toggle = section:Toggle("Toggle", function(bool)
+   print("Toggle is: "..tostring(bool))
+end) -- Args(<String> Name, <Function> Callback)
+toggle:Set(false) -- Args(<Boolean> ToggleState, <Function?> Callback)
+
+local dropdown = section:Dropdown("ESP (...)") -- Args(<String> Name)
+dropdown:ChangeText("ALL") -- Args(<String> NewText)
+dropdown:Toggle("ALL") -- Dropdowns and searchbars can go inside dropdowns
+
+local label = section:Label("Player") -- Args(<String> LabelText, <Number?> TextSize, <Color3?> TextColor)
+label:ChangeText("Player") -- Args(<String> NewText, <Boolean?> PlayAnimation)
+
+local toggle = section:Toggle("GODMODE", function(bool)
+   print("Toggle is: "..tostring(bool))
+end) -- Args(<String> Name, <Function> Callback)
+toggle:Set(false) -- Args(<Boolean> ToggleState, <Function?> Callback)
+
+local toggle = section:Toggle("FLY", function(bool)
+   print("Toggle is: "..tostring(bool))
+end) -- Args(<String> Name, <Function> Callback)
+toggle:Set(false) -- Args(<Boolean> ToggleState, <Function?> Callback)
+
+local toggle = section:Toggle("AUTO WIN", function(bool)
+   print("Toggle is: "..tostring(bool))
+end) -- Args(<String> Name, <Function> Callback)
+toggle:Set(false) -- Args(<Boolean> ToggleState, <Function?> Callback)
+
+local toggle = section:Toggle("NOCLIP BYPASSER", function(bool)
+   print("Toggle is: "..tostring(bool))
+end) -- Args(<String> Name, <Function> Callback)
+toggle:Set(false) -- Args(<Boolean> ToggleState, <Function?> Callback)
+
+local toggle = section:Toggle("FULLBRIGHT", function(bool)
+   print("Toggle is: "..tostring(bool))
+end) -- Args(<String> Name, <Function> Callback)
+toggle:Set(false) -- Args(<Boolean> ToggleState, <Function?> Callback)
