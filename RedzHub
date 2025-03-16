@@ -1,0 +1,81 @@
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/Library-ui/refs/heads/main/Redzhubui"))()
+
+local Window = redzlib:MakeWindow({
+  Title = "GAMEBOLHUB : KAMPONG HORROR[RAMADHAN]",
+  SubTitle = "by SCRIPT GAMING",
+  SaveFolder = "DoorsSex | redz lib v5.lua"
+})
+
+Window:AddMinimizeButton({
+    Button = { Image = "rbxassetid://11287256504", BackgroundTransparency = 0 },
+    Corner = { CornerRadius = UDim.new(35, 1) },
+})
+
+Tab1:AddDiscordInvite({
+    Name = "GameBolHub Discord",
+    Description = "Join server Discord In Lib add",
+    Logo = "rbxassetid://15780353506",
+    Invite = "https://discord.gg/3YbpnV3u",
+})
+
+local Tab1 = Window:MakeTab({"Gameplay", "user"})
+
+Window:SelectTab(Tab1)
+
+local Section = Tab1:AddSection({"ESP"})
+
+Tab1:AddToggle({
+    Name = "ESP GHOST",
+    Default = false,
+    Callback = function(v)
+     local Dialog = Window:Dialog({
+    Title = "ESP GAME ???",
+    Text = "This is a Dialog",
+    Options = {
+      {"Confirm", function()
+        
+      end},
+      {"DOORS", function()
+        
+      end},
+      {"Kampong Horror", function()
+        
+      end}
+    }
+  })
+    end
+})
+
+Tab1:AddToggle({
+    Name = "ESP PLAYER",
+    Default = false,
+    Callback = function()
+    end
+})
+
+local Paragraph = Tab1:AddParagraph({"Player", "Not Working in Delta"})
+
+Tab1:AddButton({"God Mode", function(Value)
+print("Player God mode")
+end})
+
+Tab1:AddSlider({
+  Name = "Walkspeed",
+  Min = 1,
+  Max = 100,
+  Increase = 1,
+  Default = 100,
+  Callback = function(Value)
+  game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+  end
+})
+
+Tab1:AddSlider({
+  Name = "Jump Normal",
+  Min = 1,
+  Max = 100,
+  Increase = 1,
+  Default = 100,
+  Callback = function(Value)
+  end
+})
